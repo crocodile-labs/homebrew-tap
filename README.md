@@ -1,11 +1,12 @@
-# agentmoat Homebrew tap
+# OpenMoat Homebrew tap
 
-Formulae for [moat](https://github.com/agentmoat/moat-kernel), the security kernel for AI coding agents.
+Homebrew formulae for [OpenMoat](https://github.com/crocodile-labs/openmoat), security for AI
+coding agents by Crocodile Labs. The command it installs is `moat`.
 
 ```bash
-brew install agentmoat/tap/moat
+brew install crocodile-labs/tap/moat
 ```
 
-Formulae in `Formula/` are written by the release workflow of `agentmoat/moat-kernel` on every tagged
-release; do not edit them by hand. Report problems in the
-[moat-kernel issue tracker](https://github.com/agentmoat/moat-kernel/issues).
+The release workflow of `crocodile-labs/openmoat` writes the formulae in `Formula/` on every
+tagged release, so do not edit them by hand. Report problems in the
+[OpenMoat issue tracker](https://github.com/crocodile-labs/openmoat/issues).
