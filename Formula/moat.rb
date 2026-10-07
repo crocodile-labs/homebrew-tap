@@ -1,25 +1,25 @@
 class Moat < Formula
   desc "Policy guard for AI coding agents: decides allow, ask or deny for every tool call from Claude Code, Codex and Cursor, configures Claude Code's and Codex's own OS sandboxes from the same policy, and keeps a local audit log."
   homepage "https://github.com/crocodile-labs/openmoat"
-  version "0.1.0-alpha.0"
+  version "0.1.0-alpha.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.0/openmoat-aarch64-apple-darwin.tar.xz"
-      sha256 "e126e4d207b54148e9dd67fde53ffccd2f361f643b29efe6040e6f88d04083f6"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.1/openmoat-aarch64-apple-darwin.tar.xz"
+      sha256 "427ee5f08d968ba7bd38fb18486762532d0ee198c0514aab6123a37c2b32addb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.0/openmoat-x86_64-apple-darwin.tar.xz"
-      sha256 "b973bfb7670119332450724d8676e3e29b6b31cd4150f0f00d3fb52e52c8a422"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.1/openmoat-x86_64-apple-darwin.tar.xz"
+      sha256 "a5d8d4055669441b814e4e00c5f2d69068e48c59f8c07af52ff3d422693a7112"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.0/openmoat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5bd3390bd050b803a4022bc08d4a55418273507343fac462c9305d858685291d"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.1/openmoat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5b07916baaf216e00e32650b80c4219e288d69b460d2984a0e40ebfe5f86d527"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.0/openmoat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "07cc0121562ab846f14ca0ea8ea0b3c8026da1c17c7e9a5f97e4f67ebf13f50e"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.0-alpha.1/openmoat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8dc34184c0fdabfb1b6bd20db5c57083be58d406aa2bcea1a8bb8e9ef13edb53"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
