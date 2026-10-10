@@ -1,25 +1,25 @@
 class Moat < Formula
   desc "Policy guard for AI coding agents: decides allow, ask or deny for every tool call from Claude Code, Codex and Cursor, configures Claude Code's and Codex's own OS sandboxes from the same policy, and keeps a local audit log."
   homepage "https://github.com/crocodile-labs/openmoat"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.1/openmoat-aarch64-apple-darwin.tar.xz"
-      sha256 "eb5452d1b74824241944337502bd569769e3a14f80e1a9710fdbccd54eab7883"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.2.0/openmoat-aarch64-apple-darwin.tar.xz"
+      sha256 "42a4b64473fa5a6966ace0e5365187b948da604a8be54b38d13462ea8008608c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.1/openmoat-x86_64-apple-darwin.tar.xz"
-      sha256 "7f67305e416c5df0b25f61dee7cbbcdebc2c5c0654bd6faa219b0f3f2ccb8ac3"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.2.0/openmoat-x86_64-apple-darwin.tar.xz"
+      sha256 "c4da79495f0a732fae38d974de9653fe84511ddad173b2a0023ca151fbe00cae"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.1/openmoat-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f1bac77f60595a5bb22270b2ef51547815cedcb292d21208587bfd250dab0a12"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.2.0/openmoat-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d35dd32eec27714853816b2242724a8d5345aa1512b2686dba9725354d4bfee4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.1.1/openmoat-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e8f5b987b2b4d3a4e3914e6edec12f251c13a774719dd313622d344a7f66ae7b"
+      url "https://github.com/crocodile-labs/openmoat/releases/download/v0.2.0/openmoat-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "507a48fae1516adfdd5b90f1884859ce97d12900d341d37ac3c8c137b0daf02e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
